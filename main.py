@@ -15,7 +15,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # -------------------- Database Setup --------------------
-conn = sqlite3.connect(resource_path('datatasks.db'))
+conn = sqlite3.connect(resource_path('data/datatasks.db'))
 cursor = conn.cursor()
 
 cursor.execute('''
